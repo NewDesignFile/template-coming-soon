@@ -248,7 +248,7 @@ ul li:before {
 
 figure {
     width: calc(var(--spacing-13) * 3);
-    margin-top: var(--spacing-11);
+    margin-top: var(--spacing-08);
     margin-left: calc(var(--spacing-04) * -1)
 }
 

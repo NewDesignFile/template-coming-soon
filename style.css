@@ -1,0 +1,164 @@
+@import "@new-ui/foundations";
+*, *::before, *::after { box-sizing: border-box }
+html, body, div, span, applet, button, input, select, textarea, object, iframe, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {  background: transparent;
+                border: 0;
+                font: inherit;
+                font-size: 100%;
+                margin: 0;
+                min-width: 0;
+                outline: 0;
+                padding: 0;
+                vertical-align: baseline }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, img, svg { display: block } ol, ul, menu { list-style: none }
+
+:root { --serif: 'Source Serif 4', serif }
+
+html {  min-height: -webkit-fill-available; scroll-behavior: smooth }
+
+body {  background: var(--background);
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+        font-family: var(--serif);
+        font-feature-settings: 'liga', 'dlig';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-style: normal;
+        min-height: 100vh;
+        text-rendering: optimizeLegibility }
+
+@supports(-webkit-touch-callout: none) { body { min-height: -webkit-fill-available }}
+
+header, main {  display: flex;
+                flex-direction: column;
+                margin-inline: auto;
+                width: min(100%, 32em) }
+
+header { height: var(--spacing-16, 6em) }
+
+header h1 { align-items: center;
+            display: flex;
+            flex: 1;
+            justify-content: flex-end }
+
+header h1 a { height: var(--spacing-11, 3em); width: 100%; max-width: 5.96em }
+
+header h1 a span { display: none }
+
+header h1 a img { height: 100%;
+                  max-height: 100%;
+                  width: auto }
+
+main {  flex: 1;
+        margin-bottom: var(--spacing-15, 5em) }
+
+main > * + * { margin-top: var(--spacing-08, 1.5em) }
+
+main ol, main ul {  display: flex;
+                    flex-direction: column }
+
+main ol li, main ul li { position: relative }
+
+main ol li:before, main ul li:before {  font-feature-settings: 'case', 'tnum';
+                                        left: 0;
+                                        position: absolute;
+                                        top: 0 }
+
+main ol { counter-reset: counter;
+          gap: 0.65em }
+
+main ol li {  counter-increment: counter;
+              padding-left: 1.8em }
+
+main ol li:before { content: counter(counter) '.';
+                    text-align: right;
+                    width: 1.4em }
+
+main ul { gap: 0.325em }
+
+main ul li { padding-left: 0.9em }
+
+main ul li:before { content: '—';
+                    opacity: 0.32 }
+
+main figure {
+  width: calc(var(--spacing-13) * 3);
+  margin-top: var(--spacing-11);
+  margin-left: calc(var(--spacing-04) * -1);
+}
+
+main figure img { height: auto;
+                  max-width: 100%;
+                  width: 100% }
+
+main dl {
+  font-feature-settings: 'case';
+  font-size: var(--desktop-body);
+  line-height: var(--lh-desktop-body);
+  margin-top: var(--spacing-04);
+}
+
+main dl dt {
+  font-weight: 600;
+}
+
+main form {
+  margin-bottom: -2.6em;
+  position: relative;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+main form aside {
+  display: flex;
+  height: 1.3em;
+  position: relative;
+}
+
+.button {
+  background: var(--button);
+  border-radius: 0.2em;
+  box-shadow:
+    0 0 0 1px rgba(var(--rgb-blue-dark), 0.05),
+    0 1px 0 0 rgba(var(--rgb-blue-dark), 0.05)
+  ;
+  color: var(--color-blue);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 0.25em 1.3em;
+  text-decoration: none;
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+
+a {
+  color: var(--color-white);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.1em;
+}
+
+b,
+strong {
+  color: var(--color-white);
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+
+@media (max-width: 50rem) {
+  header,
+  main {
+    padding-left: var(--spacing-09, 2em);
+    padding-right: var(--spacing-09, 2em);
+  }
+}

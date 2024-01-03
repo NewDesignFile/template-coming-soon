@@ -290,7 +290,7 @@ form aside fieldset {
     width: 100%;
 }
 
-main form aside fieldset input {
+input {
     background-color: var(--background);
     border: 1px solid var(--border-muted);
     border-radius: var(--spacing-03);
@@ -301,15 +301,15 @@ main form aside fieldset input {
     padding: var(--spacing-03) var(--spacing-05);
 }
 
-main form aside fieldset input ::placeholder {
+input ::placeholder {
     color: var(--text-placeholder)
 }
 
-main form aside fieldset input:hover {
+input:hover {
     border-color: var(--border)
 }
 
-main form aside fieldset input:focus {
+input:focus {
     border-color: var(--border);
     outline: 1px solid var(--order-focus);
     outline-offset: 0

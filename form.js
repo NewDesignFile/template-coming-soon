@@ -5,7 +5,7 @@ document.querySelector('#form').innerHTML = `
 <aside>
   <fieldset>
     <input type="email" class="text-input" autocomplete="email" placeholder="Email address" name="EMAIL" tabindex="-1">
-    <button class="button" type="submit" name="subscribe" tabindex="-1"> &#8594;</button>
+    <button class="button" type="submit" name="subscribe" tabindex="-1"> &#8594; </button>
   </fieldset>
 </aside>
 </form>

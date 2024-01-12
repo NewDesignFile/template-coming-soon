@@ -247,15 +247,8 @@ ul li:before {
 }
 
 figure {
-    width: calc(var(--spacing-13) * 3);
     margin-top: var(--spacing-08);
     margin-left: calc(var(--spacing-04) * -1)
-}
-
-figure img {
-    height: auto;
-    max-width: 100%;
-    width: 100%
 }
 
 dl {
@@ -292,7 +285,7 @@ form aside fieldset {
 
 input {
     background-color: var(--background);
-    border: 1px solid var(--border-muted);
+    border: 1px solid var(--border);
     border-radius: var(--spacing-03);
     width: calc(var(--spacing-17) * 3);
     appearance: none;
@@ -306,17 +299,17 @@ input ::placeholder {
 }
 
 input:hover {
-    border-color: var(--border)
+    border-color: var(--border-strong)
 }
 
 input:focus {
-    border-color: var(--border);
+    border-color: var(--border-strong);
     outline: 1px solid var(--order-focus);
     outline-offset: 0
 }
 
 .button {
-    background: var(--button-primary);
+    background: var(--button);
     border-radius: var(--spacing-02);
     color: var(--text-on-color);
     cursor: pointer;

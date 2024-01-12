@@ -262,6 +262,10 @@ dl dt {
     font-weight: 600
 }
 
+dl dd {
+    color: var(--text-secondary);
+}
+
 form {
     margin-bottom: var(--spacing-13);
     position: relative;
@@ -285,7 +289,7 @@ form aside fieldset {
 
 input {
     background-color: var(--background);
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-muted);
     border-radius: var(--spacing-03);
     width: calc(var(--spacing-17) * 3);
     appearance: none;
@@ -299,11 +303,11 @@ input ::placeholder {
 }
 
 input:hover {
-    border-color: var(--border-strong)
+    border-color: var(--border)
 }
 
 input:focus {
-    border-color: var(--border-strong);
+    border-color: var(--border);
     outline: 1px solid var(--order-focus);
     outline-offset: 0
 }
@@ -323,6 +327,14 @@ input:focus {
     top: var(--spacing-02);
     right: var(--spacing-02);
     height: 32px;
+}
+
+.button:hover {
+    background: var(--button-hover)
+}
+
+.button:active {
+    background: var(--button-active)
 }
 
 a {

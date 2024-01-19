@@ -126,10 +126,6 @@ menu {
     list-style: none
 }
 
-:root {
-    --serif: 'Source Serif 4', serif
-}
-
 html {
     min-height: -webkit-fill-available;
     scroll-behavior: smooth
@@ -140,7 +136,7 @@ body {
     color: var(--text-primary);
     display: flex;
     flex-direction: column;
-    font-family: var(--serif);
+    font-family: var(--transitional);
     font-feature-settings: 'liga', 'dlig';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -238,7 +234,7 @@ ul {
 }
 
 ul li {
-    padding-left: var(--spacing-06)
+    padding-left: var(--spacing-08)
 }
 
 ul li:before {

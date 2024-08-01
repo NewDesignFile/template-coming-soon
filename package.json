@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "@new-ui/foundations": "^0.0.8",
-    "vite": "^5.3.4"
+    "vite": "^5.3.5"
   }
 }

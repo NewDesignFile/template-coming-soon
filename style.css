@@ -126,11 +126,6 @@ menu {
     list-style: none
 }
 
-html {
-    min-height: -webkit-fill-available;
-    scroll-behavior: smooth
-}
-
 body {
     background: var(--background);
     color: var(--text-primary);
@@ -140,6 +135,8 @@ body {
     font-feature-settings: 'liga', 'dlig';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: var(--desktop-body-xl);
+    line-height: var(--lh-desktop-body-xl);
     font-style: normal;
     min-height: 100vh;
     text-rendering: optimizeLegibility
@@ -230,11 +227,13 @@ ol li:before {
 }
 
 ul {
-    gap: var(--spacing-02)
+    gap: var(--spacing-02);
+    padding: 0;
 }
 
 ul li {
-    padding-left: var(--spacing-08)
+    padding-left: var(--spacing-08);
+    list-style: none;
 }
 
 ul li:before {
@@ -288,6 +287,8 @@ input {
     border: 1px solid var(--border-muted);
     border-radius: var(--spacing-03);
     width: calc(var(--spacing-17) * 3);
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     color: var(--text-primary);
     flex: 1;
@@ -311,6 +312,7 @@ input:focus {
 .button {
     background: var(--button);
     border-radius: var(--spacing-02);
+    font-family: system-ui, sans-serif;
     color: var(--text-on-color);
     cursor: pointer;
     display: inline-flex;

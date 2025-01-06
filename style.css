@@ -3,378 +3,282 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
 }
 
-html,
-body,
-div,
-span,
-applet,
-button,
-input,
-select,
-textarea,
-object,
-iframe h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    background: transparent;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    min-width: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline
+html, body, div, span, applet, button, input, select, textarea,
+object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, main, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-img,
-svg {
-    display: block
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, img, svg {
+  display: block;
 }
 
 ol,
 ul,
 menu {
-    list-style: none
+  list-style: none;
 }
 
 body {
-    background: var(--background);
-    color: var(--text-primary);
-    display: flex;
-    flex-direction: column;
-    font-family: var(--transitional);
-    font-feature-settings: 'liga', 'dlig';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: var(--desktop-body-xl);
-    line-height: var(--lh-desktop-body-xl);
-    font-style: normal;
-    min-height: 100vh;
-    text-rendering: optimizeLegibility
+  background: var(--background);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--transitional);
+  font-feature-settings: 'liga', 'dlig';
+  font-size: var(--desktop-body-xl);
+  line-height: var(--lh-desktop-body-xl);
+  font-style: normal;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @supports(-webkit-touch-callout: none) {
-    body {
-        min-height: -webkit-fill-available
-    }
+  body {
+    min-height: -webkit-fill-available;
+  }
 }
 
 header,
 main {
-    display: flex;
-    flex-direction: column;
-    margin-inline: auto;
-    width: min(100%, 32em)
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: min(100%, 32em);
 }
 
 header {
-    height: var(--spacing-16, 6em)
+  height: var(--spacing-16);
 }
 
 header h1 {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 header h1 a {
-    height: var(--spacing-11, 3em);
-    max-width: 5.96em
+  height: var(--spacing-11);
+  max-width: 5.96em;
 }
 
 header h1 a span {
-    display: none
+  display: none;
 }
 
 header h1 a img {
-    height: 100%;
-    max-height: 100%;
-    width: auto
+  height: 100%;
+  max-height: 100%;
+  width: auto;
 }
 
 main {
-    flex: 1;
-    margin-bottom: var(--spacing-15, 5em)
+  flex: 1;
+  margin-bottom: var(--spacing-15);
 }
 
-main>*+* {
-    margin-top: var(--spacing-08, 1.5em)
+main > * + * {
+  margin-top: var(--spacing-08);
 }
 
 ol,
 ul {
-    display: flex;
-    flex-direction: column
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-02);
 }
 
 ol li,
 ul li {
-    position: relative
+  position: relative;
 }
 
-ol li:before,
-ul li:before {
-    font-feature-settings: 'case', 'tnum';
-    left: 0;
-    position: absolute;
-    top: 0
+ol li::before,
+ul li::before {
+  font-feature-settings: 'case', 'tnum';
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 ol {
-    counter-reset: counter;
-    gap: var(--spacing-02)
+  counter-reset: counter;
 }
 
 ol li {
-    counter-increment: counter;
-    padding-left: var(--spacing-09)
+  counter-increment: counter;
+  padding-left: var(--spacing-09);
 }
 
-ol li:before {
-    content: counter(counter) '.';
-    text-align: right;
-    width: var(--spacing-08)
+ol li::before {
+  content: counter(counter) '.';
+  text-align: right;
+  width: var(--spacing-08);
 }
 
 ul {
-    gap: var(--spacing-02);
-    padding: 0;
+  padding: 0;
 }
 
 ul li {
-    padding-left: var(--spacing-08);
-    list-style: none;
+  padding-left: var(--spacing-08);
 }
 
-ul li:before {
-    content: '—';
-    opacity: 0.24
-}
-
-figure {
-    margin-top: var(--spacing-08);
-    margin-left: calc(var(--spacing-04) * -1)
+ul li::before {
+  content: '—';
+  opacity: 0.24;
 }
 
 dl {
-    font-feature-settings: 'case';
-    font-size: var(--desktop-body);
-    line-height: var(--lh-desktop-body);
-    margin-top: var(--spacing-04)
+  font-feature-settings: 'case';
+  font-size: var(--desktop-body);
+  line-height: var(--lh-desktop-body);
+  margin-top: var(--spacing-04);
 }
 
 dl dt {
-    font-weight: 600
+  font-weight: 600;
 }
 
 dl dd {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 form {
-    margin-bottom: var(--spacing-13);
-    position: relative;
-    user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none
+  margin-bottom: var(--spacing-13);
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 form aside {
-    display: flex;
-    position: relative
+  display: flex;
+  position: relative;
 }
 
 form aside fieldset {
-    display: flex;
-    left: 0;
-    position: absolute;
-    padding: var(--spacing-00);
-    width: 100%;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: var(--spacing-00);
+  width: 100%;
 }
 
 input {
-    background-color: var(--background);
-    border: 1px solid var(--border-muted);
-    border-radius: var(--spacing-03);
-    width: calc(var(--spacing-17) * 3);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: var(--text-primary);
-    flex: 1;
-    padding: var(--spacing-03) var(--spacing-05);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--background);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--spacing-03);
+  color: var(--text-primary);
+  flex: 1;
+  padding: var(--spacing-03) var(--spacing-05);
+  width: calc(var(--spacing-17) * 3);
 }
 
-input ::placeholder {
-    color: var(--text-placeholder)
+input::placeholder {
+  color: var(--text-placeholder);
 }
 
 input:hover {
-    border-color: var(--border)
+  border-color: var(--border);
 }
 
 input:focus {
-    border-color: var(--border);
-    outline: 1px solid var(--order-focus);
-    outline-offset: 0
+  border-color: var(--border);
+  outline: 1px solid var(--order-focus);
+  outline-offset: 0;
 }
 
 .button {
-    background: var(--button);
-    border-radius: var(--spacing-02);
-    font-family: system-ui, sans-serif;
-    color: var(--text-on-color);
-    cursor: pointer;
-    display: inline-flex;
-    font-weight: 600;
-    padding: 0.25em 1.3em;
-    text-decoration: none;
-    white-space: nowrap;
-    align-items: center;
-    position: inherit;
-    top: var(--spacing-02);
-    right: var(--spacing-02);
-    height: 32px;
+  align-items: center;
+  background: var(--button);
+  border-radius: var(--spacing-02);
+  color: var(--text-on-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  height: 32px;
+  padding: 0.25em 1.3em;
+  position: inherit;
+  right: var(--spacing-02);
+  text-decoration: none;
+  top: var(--spacing-02);
+  white-space: nowrap;
 }
 
 .button:hover {
-    background: var(--button-hover)
+  background: var(--button-hover);
 }
 
 .button:active {
-    background: var(--button-active)
+  background: var(--button-active);
 }
 
 a {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 0.06em;
-    text-underline-offset: 0.1em;
-    color: var(--link);
+  color: var(--link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.1em;
 }
 
 a:hover {
-    color: var(--link-hover);
+  color: var(--link-hover);
 }
 
 a:visited {
-    color: var(--link-visited);
+  color: var(--link-visited);
 }
 
 b,
 strong {
-    font-weight: 600;
-    letter-spacing: normal;
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 i,
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 @media (max-width: 50rem) {
+  header,
+  main {
+    padding-left: var(--spacing-09);
+    padding-right: var(--spacing-09);
+  }
 
-    header,
-    main {
-        padding-left: var(--spacing-09, 2em);
-        padding-right: var(--spacing-09, 2em);
-    }
-    main form aside fieldset input {
-      width: 100%;
-    }
-    .button {
-      top: var(--spacing-02);
-      right: var(--spacing-02);
-      height: 30px;
-    }
+  main form aside fieldset input {
+    width: 100%;
+  }
+
+  .button {
+    height: 30px;
+    right: var(--spacing-02);
+    top: var(--spacing-02);
+  }
 }

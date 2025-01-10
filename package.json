@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@new-ui/foundations": "^0.0.9",
+    "@new-ui/foundations": "^0.1.0",
     "vite": "^6.0.7"
   }
 }

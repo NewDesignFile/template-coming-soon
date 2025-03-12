@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@new-ui/foundations':
-        specifier: ^0.2.1
-        version: 0.2.1
+        specifier: ^0.2.2
+        version: 0.2.2
       vite:
         specifier: ^6.2.1
         version: 6.2.1
@@ -167,14 +167,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@new-ui/colors@1.3.1':
-    resolution: {integrity: sha512-ajFjCwCVlPvdE3/14NnkygIHB5aEnVjqKOEZsJADjvCRSMA+Il5aAQroh0xEcBn5I0FhVKZhi8aMbAc/mVM4XQ==}
+  '@new-ui/colors@2.0.0':
+    resolution: {integrity: sha512-qATqQwIAEssQLwKPlcRyBOMAY3d9wr/zZplF6mvKAGnu1Ofnivoy1F0kLXPb7SyPmBLJ71RMNqHy2GX5rw8gVg==}
 
   '@new-ui/effects@0.1.4':
     resolution: {integrity: sha512-dgJPMKaqn1hbcYfT4SW/y8C39+PfF+1uVI/DJyim8+GZ5E8Yqisfs+MTdVByn0d1jHy6AZkCBRpiXeQfoXI6hA==}
 
-  '@new-ui/foundations@0.2.1':
-    resolution: {integrity: sha512-gDGvTvmmq7SYYyTSnF7VnhxOIOGEL0zZZbnbYeWbXmtm4ZGQKuz/CN95Td64J4WcifNXIJvSSur49Ev199J+jQ==}
+  '@new-ui/foundations@0.2.2':
+    resolution: {integrity: sha512-dRhALhB+Y6h4pKyOuUdzuAnc1TZoxU7bYXbqVhIOeBv8dObEuJ+YM5kF0999esc6+9VwTp5yKrax+sLNUja+Yw==}
 
   '@new-ui/reset@0.0.7':
     resolution: {integrity: sha512-y2TdhXrQK0YhBlf1Bf/RqB8RHKdtthTiMIPyQOemk5/q+TmbHP4TQX2mpEQNnB9g0aEtq4NFixgbdSyCBY5Nvw==}
@@ -431,13 +431,13 @@ snapshots:
   '@esbuild/win32-x64@0.25.0':
     optional: true
 
-  '@new-ui/colors@1.3.1': {}
+  '@new-ui/colors@2.0.0': {}
 
   '@new-ui/effects@0.1.4': {}
 
-  '@new-ui/foundations@0.2.1':
+  '@new-ui/foundations@0.2.2':
     dependencies:
-      '@new-ui/colors': 1.3.1
+      '@new-ui/colors': 2.0.0
       '@new-ui/effects': 0.1.4
       '@new-ui/reset': 0.0.7
       '@new-ui/spacings': 0.1.4

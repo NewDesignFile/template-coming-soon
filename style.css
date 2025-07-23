@@ -31,6 +31,10 @@ header, hgroup, main, menu, nav, section, img, svg {
   display: block;
 }
 
+figure {
+  margin-top: var(--spacing-08);
+}
+
 ol,
 ul,
 menu {
@@ -64,7 +68,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  width: min(100%, 32em);
+  width: min(100%, 48rem);
 }
 
 header {
@@ -155,6 +159,7 @@ dl {
   font-size: var(--desktop-body);
   line-height: var(--lh-desktop-body);
   margin-top: var(--spacing-04);
+  margin-bottom: var(--spacing-10);
 }
 
 dl dt {

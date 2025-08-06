@@ -5,8 +5,8 @@
   font-display: swap;
   font-style: normal;
   font-stretch: normal;
-  src: url('Serif.ttf.woff2') format('woff2'),
-       url('Serif.otf.woff2') format('woff');
+  src: url('/Serif.ttf.woff2') format('woff2'),
+       url('/Serif.otf.woff2') format('woff');
 }
 
 *,
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  font-family: "Serif", serif;
+  font-family: "Serif", Charter, Bitstream Charter, Sitka Text, Cambria, serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
